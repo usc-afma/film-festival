@@ -1,67 +1,67 @@
 <!-- Contact -->
-<section id="contact">
-	<div class="inner">
-		<section>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
-				<div class="field half first">
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
-				</div>
-				<div class="field half">
-					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
-				</div>
-				<div class="field">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" rows="6"></textarea>
-				</div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
-				</ul>
-			</form>
-		</section>
-		<section class="split">
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
-					<a href="#">{{ site.email }}</a>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-phone"></span>
-					<h3>Phone</h3>
-					<span>{{ site.phone }}</span>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-home"></span>
-					<h3>Address</h3>
-					<span>
-					{% if site.street_address %}
-					    {{ site.street_address }}<br />
-					{% endif %}
-					{% if site.city %}
-					    {{ site.city }},
-					{% endif %}
-					{% if site.state %}
-					    {{ site.state }} 
-					{% endif %}
-					{% if site.zip_code %}
-					    {{ site.zip_code }}<br />
-					{% endif %}
-					{% if site.country %}
-					    {{ site.country }}
-					{% endif %}
-					</span>
-				</div>
-			</section>
-		</section>
-	</div>
-</section>
+<!--<section id="contact">-->
+	<!--<div class="inner">-->
+		<!--<section>-->
+			<!--<form action="https://formspree.io/{{ site.email }}" method="POST">-->
+				<!--<div class="field half first">-->
+					<!--<label for="name">Name</label>-->
+					<!--<input type="text" name="name" id="name" />-->
+				<!--</div>-->
+				<!--<div class="field half">-->
+					<!--<label for="email">Email</label>-->
+					<!--<input type="text" name="_replyto" id="email" />-->
+				<!--</div>-->
+				<!--<div class="field">-->
+					<!--<label for="message">Message</label>-->
+					<!--<textarea name="message" id="message" rows="6"></textarea>-->
+				<!--</div>-->
+				<!--<ul class="actions">-->
+					<!--<li><input type="submit" value="Send Message" class="special" /></li>-->
+					<!--<li><input type="reset" value="Clear" /></li>-->
+				<!--</ul>-->
+			<!--</form>-->
+		<!--</section>-->
+		<!--<section class="split">-->
+			<!--<section>-->
+				<!--<div class="contact-method">-->
+					<!--<span class="icon alt fa-envelope"></span>-->
+					<!--<h3>Email</h3>-->
+					<!--<a href="#">{{ site.email }}</a>-->
+				<!--</div>-->
+			<!--</section>-->
+			<!--<section>-->
+				<!--<div class="contact-method">-->
+					<!--<span class="icon alt fa-phone"></span>-->
+					<!--<h3>Phone</h3>-->
+					<!--<span>{{ site.phone }}</span>-->
+				<!--</div>-->
+			<!--</section>-->
+			<!--<section>-->
+				<!--<div class="contact-method">-->
+					<!--<span class="icon alt fa-home"></span>-->
+					<!--<h3>Address</h3>-->
+					<!--<span>-->
+					<!--{% if site.street_address %}-->
+					    <!--{{ site.street_address }}<br />-->
+					<!--{% endif %}-->
+					<!--{% if site.city %}-->
+					    <!--{{ site.city }},-->
+					<!--{% endif %}-->
+					<!--{% if site.state %}-->
+					    <!--{{ site.state }} -->
+					<!--{% endif %}-->
+					<!--{% if site.zip_code %}-->
+					    <!--{{ site.zip_code }}<br />-->
+					<!--{% endif %}-->
+					<!--{% if site.country %}-->
+					    <!--{{ site.country }}-->
+					<!--{% endif %}-->
+					<!--</span>-->
+				<!--</div>-->
+			<!--</section>-->
+		<!--</section>-->
+	<!--</div>-->
+<!--</section>-->
 
 <!-- Footer -->
 	<footer id="footer">
@@ -69,9 +69,6 @@
 			<ul class="icons">
 				{% if site.twitter_url %}
 				<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-				{% endif %}
-				{% if site.googleplus_url %}
-				<li><a href="{{ site.googleplus_url }}" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
 				{% endif %}
 				{% if site.facebook_url %}
 				<li><a href="{{ site.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
@@ -99,10 +96,7 @@
 				{% endif %}
 			</ul>
 			<ul class="copyright">
-				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
-				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-
+				<li>{{ site.title }} {{ site.subtitle }} &copy; <script>new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());</script></li>
 			</ul>
 		</div>
 	</footer>
