@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: Festival Home
 landing-title: 'AFMA Film Festival of Young Cinema'
 description: null
 image: null

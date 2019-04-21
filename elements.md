@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Elements
-nav-menu: true
+image: null
+nav-menu: false
+show_tile: false
 ---
 
 <!-- Main -->
